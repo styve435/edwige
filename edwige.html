@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour ma belle Edwige ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff2d55 0%, #f94a4a 50%, #990000 100%);
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px;
+            text-align: center;
+            background: rgba(255,255,255,0.90);
+            border-radius: 20px;
+            margin-top: 32px;
+            box-shadow: 0 8px 32px rgba(255, 50, 80, 0.18);
+        }
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: #c2001a;
+        }
+        .header p {
+            font-size: 1.15rem;
+            color: #a83232;
+            font-style: italic;
+            margin-bottom: 24px;
+        }
+        .love-message {
+            background: rgba(255,255,255,0.93);
+            padding: 22px;
+            border-radius: 16px;
+            margin: 26px 0;
+            box-shadow: 0 2px 12px rgba(199, 0, 57, 0.08);
+            font-size: 1.25rem;
+        }
+        .love-message h2 {
+            color: #c2001a;
+            font-size: 1.7rem;
+            margin-bottom: 14px;
+        }
+        .love-message p {
+            font-size: 1.19rem;
+            line-height: 1.7;
+            color: #b32a2a;
+        }
+        .final-message {
+            background: linear-gradient(45deg, #c2001a, #ff2d55, #f94a4a);
+            color: #fff3f3;
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 32px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            box-shadow: 0 2px 10px #ff2d5560;
+            letter-spacing: 1px;
+        }
+        .teddy-bear {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            font-size: 6rem;
+            animation: bounce 2.5s infinite;
+            z-index: 10;
+            transition: transform 0.3s cubic-bezier(.47,1.64,.41,.8);
+            cursor: pointer;
+            color: #c2001a;
+            text-shadow: 0 0 16px #ffb3b3;
+        }
+        .teddy-bear:hover {
+            transform: rotate(-18deg) scale(1.12);
+            filter: drop-shadow(0 8px 20px #ffb3b3);
+        }
+        .big-heart {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10rem;
+            color: #ff2d55;
+            opacity: 0.13;
+            z-index: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+        .floating-heart, .floating-word {
+            position: fixed;
+            pointer-events: auto;
+            z-index: 20;
+            transition: transform 0.27s cubic-bezier(.47,1.64,.41,.8), box-shadow 0.22s;
+        }
+        .floating-heart {
+            opacity: 0.7;
+            animation: floatHeart 5s linear;
+            cursor: pointer;
+        }
+        .floating-heart:hover {
+            transform: scale(1.6) rotate(-30deg);
+            box-shadow: 0 4px 22px #ffb3b3;
+            z-index: 100;
+        }
+        .floating-word {
+            font-size: 1.1rem;
+            font-family: 'Dancing Script', cursive;
+            color: #c2001a;
+            font-weight: bold;
+            text-shadow: 1px 1px 8px #ffb3b3;
+            z-index: 30;
+            animation: floatWord 6s linear;
+            cursor: pointer;
+        }
+        .floating-word:hover {
+            transform: scale(1.45) rotate(8deg);
+            color: #ff2d55;
+            text-shadow: 0 2px 20px #fff3f3;
+            z-index: 100;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-15px);}
+            60% {transform: translateY(-7px);}
+        }
+        @keyframes floatHeart {
+            0%   {transform: translateY(0) scale(1); opacity: 0.8;}
+            80%  {opacity: 0.95;}
+            100% {transform: translateY(-80vh) scale(1.15); opacity: 0;}
+        }
+        @keyframes floatWord {
+            0%   {transform: translateY(0); opacity: 0;}
+            10%  {opacity: 1;}
+            80%  {opacity: 1;}
+            100% {transform: translateY(-90vh); opacity: 0;}
+        }
+        @media (max-width: 600px) {
+            .container {padding: 8px;}
+            .header h1 {font-size: 1.3rem;}
+            .final-message {font-size: 1rem;}
+            .big-heart {font-size: 6rem;}
+            .teddy-bear {font-size: 3.5rem; right: 8px; bottom: 8px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="big-heart">❤️</div>
+    <div class="teddy-bear" title="Clique sur moi !">🧸</div>
+    <div class="container">
+        <div class="header">
+            <h1>Pour ma Edwige préférée ❤️</h1>
+            <p>Si l'amour avait une couleur, ce serait la tienne (et un peu la mienne aussi 😏)</p>
+        </div>
+        <div class="love-message">
+            <h2>La distance, c’est rien quand on sait attendre 💌</h2>
+            <p>Parfois, la vie décide de nous séparer un moment. Toi là-bas, à servir, à te dépasser… et moi, ici, à t’attendre comme un soldat du love.</p>
+            <p>Il y a les kilomètres, il y a le manque, mais il y a surtout tout ce qu’on partage, même à distance. Je pense à toi, fort, tout le temps. Je t’envoie des câlins par la pensée et des “je t’aime” par milliers.</p>
+            <p>Tu es mon héroïne, ma force, mon impatience. Peu importe l’uniforme, peu importe où tu es : mon cœur, lui, reste aligné sur le tien. Je t’attendrai, même si c’est long. Parce qu’au bout de cette attente, c’est TOI.</p>
+            <p>Reviens vite, je réserve mes plus beaux sourires (et tous mes câlins) pour notre retrouvailles !</p>
+        </div>
+        <div class="love-message">
+            <h2>Toi + Moi = Passion rouge tomate ! 🍅</h2>
+            <p>Edwige, t’es la sauce piquante dans mon kebab, la paillette dans ma vie… et la raison pour laquelle j’ai toujours le smile.</p>
+            <p>Tu as ce don : transformer une journée normale en festival de câlins rouges et de rires.</p>
+            <p>Franchement, même mes chaussettes rouges n’arrivent pas à ton niveau de “wow”.</p>
+        </div>
+        <div class="love-message">
+            <h2>Rouge, comme…</h2>
+            <p>Le blush sur mes joues quand tu me regardes.</p>
+            <p>La couleur de tes messages quand tu fais une blague nulle (et que j’adore quand même).</p>
+            <p>La passion dans nos délires, nos bêtises, nos fous rires jusqu’à en pleurer !</p>
+            <p>La dernière part de gâteau que je te laisse, parce que t’es ma priorité (et que je veux des points bonus).</p>
+        </div>
+        <div class="love-message">
+            <h2>Promis, c’est très sérieux ! (ou presque…)</h2>
+            <p>Merci d’être la personne qui me fait vibrer, grandir, et sourire même quand j’ai la flemme de sourire.</p>
+            <p>Reste comme tu es : unique, pétillante, parfois relou mais toujours adorable… Comme un bonbon pimenté.</p>
+        </div>
+        <div class="love-message">
+            <h2>Despacito – Luis Fonsi (ft. Daddy Yankee) 🎶</h2>
+            <p>
+                <b>Luis Fonsi (feat. Daddy Yankee)</b><br>
+                Ay, Fonsi, DY<br>
+                Oh, oh no, oh no, oh<br>
+                Hey, yeah<br>
+                Diridiri, dirididi Daddy<br>
+                Go!
+            </p>
+            <p>
+                Sí, sabes que ya llevo un rato mirándote<br>
+                Tengo que bailar contigo hoy (DY)<br>
+                Vi que tu mirada ya estaba llamándome<br>
+                Muéstrame el camino que yo voy (Oh)
+            </p>
+            <p>
+                Tú, tú eres el imán y yo soy el metal<br>
+                Me voy acercando y voy armando el plan<br>
+                Solo con pensarlo se acelera el pulso (Oh yeah)<br>
+                Ya, ya me está gustando más de lo normal<br>
+                Todos mis sentidos van pidiendo más<br>
+                Esto hay que tomarlo sin ningún apuro
+            </p>
+            <p>
+                <b>Refrain :</b><br>
+                Despacito<br>
+                Quiero respirar tu cuello despacito<br>
+                Deja que te diga cosas al oído<br>
+                Para que te acuerdes si no estás conmigo<br>
+                Despacito<br>
+                Quiero desnudarte a besos despacito<br>
+                Firmar las paredes de tu laberinto<br>
+                Y hacer de tu cuerpo todo un manuscrito<br>
+                (Sube, sube, sube... Sube, sube)
+            </p>
+        </div>
+        <div class="final-message">
+            ❤️ Si tu souris, mission accomplie ❤️<br>
+            <strong>- Carl, le mec qui t’aime plus que le rouge et qui t’attendra toujours</strong>
+        </div>
+    </div>
+    <script>
+        // Cœurs flottants rouges et fun
+        const heartEmojis = [
+            '❤️','💋','🥰','😍','😘','💖','💗','💓','🩷','💘','💃','🔥','😻'
+        ];
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            heart.textContent = heartEmojis[Math.floor(Math.random()*heartEmojis.length)];
+            heart.style.left = (Math.random()*95) + 'vw';
+            heart.style.bottom = '-40px';
+            heart.style.fontSize = (Math.random()*1.2 + 1.1) + 'rem';
+            heart.style.color = ['#ff2d55','#c2001a','#f94a4a','#b32a2a','#ffb3b3'][Math.floor(Math.random()*5)];
+            heart.style.animationDuration = (Math.random()*2.5 + 4.5) + 's';
+            document.body.appendChild(heart);
+            setTimeout(() => { heart.remove(); }, 6000);
+        }
+        setInterval(createFloatingHeart, 600);
+
+        // Mots flottants rouges, tendres & humains
+        const funnyWords = [
+            "Ma tomate cerise", "Miss Rouge Passion", "Ma fraise tagada", "Mon piment doux", "Ma go ketchup",
+            "Reine du câlin", "Miss Blush", "Mon cœur qui bat", "Miss Selfie", "Serial kisseuse", "Ma sunshine", 
+            "Ma team Netflix", "Miss Bêtise", "Ma punchline", "Ma folie douce", "Mon cookie à croquer", 
+            "Miss Rire qui tue", "Ma confidente", "Mon emoji préféré", "Queen du canap'", "La Boss du love", 
+            "Miss Choupette", "Mon rayon de soleil", "Ma douceur", "Ma meilleure blagueuse", "Ma licorne",
+            "Chipeuse de couettes", "Mon panda", "Mon énergie rouge", "Miss Doux Piment", "Ma chance", 
+            "Ma voix préférée", "Ma petite victoire du jour", "Ma raison de sourire", "Ma confidente", 
+            "Ma sunshine", "Mon anti-routine", "Mon miracle du quotidien", "Miss ‘J’ai faim’", "Reine du love"
+        ];
+        function createFloatingWord() {
+            const word = document.createElement('div');
+            word.className = 'floating-word';
+            word.textContent = funnyWords[Math.floor(Math.random()*funnyWords.length)];
+            word.style.left = (Math.random()*82) + 'vw';
+            word.style.bottom = '-25px';
+            word.style.fontSize = (Math.random()*0.7 + 1.1) + 'rem';
+            word.style.animationDuration = (Math.random()*1.2 + 5) + 's';
+            document.body.appendChild(word);
+            setTimeout(() => { word.remove(); }, 6500);
+        }
+        setInterval(createFloatingWord, 1100);
+    </script>
+</body>
+</html>
